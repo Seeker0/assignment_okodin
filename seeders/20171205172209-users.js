@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
@@ -22,7 +22,7 @@ module.exports = {
         profileId: `${i}`
       });
     }
-    return queryInterface.bulkInsert("Users", users);
+    return queryInterface.bulkInsert('Users', users);
   },
 
   down: (queryInterface, Sequelize) => {
