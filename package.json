@@ -1,10 +1,15 @@
 {
   "name": "assignment_okodin",
   "version": "1.0.0",
-  "description": "Build a dating app so Viking thunder gods can find love &lt;3",
+  "description":
+    "Build a dating app so Viking thunder gods can find love &lt;3",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seed":
+      "sequelize db:migrate:undo:all && sequelize db:migrate && sequelize db:seed:all",
+    "console": "node repl.js",
+    "c": "node repl.js"
   },
   "repository": {
     "type": "git",
