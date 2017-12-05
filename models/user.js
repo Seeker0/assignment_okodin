@@ -52,7 +52,7 @@ module.exports = (sequelize, DataTypes) => {
           }
         }
       },
-      profileId: DataTypes.INTEGER
+      profileId: Sequelize.INTEGER
     },
     {}
   );
