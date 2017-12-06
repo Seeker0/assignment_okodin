@@ -1,13 +1,11 @@
 {
   "name": "assignment_okodin",
   "version": "1.0.0",
-  "description":
-    "Build a dating app so Viking thunder gods can find love &lt;3",
+  "description": "Build a dating app so Viking thunder gods can find love &lt;3",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "seed":
-      "sequelize db:migrate:undo:all && sequelize db:migrate && sequelize db:seed:all",
+    "seed": "sequelize db:migrate:undo:all && sequelize db:migrate && sequelize db:seed:all",
     "console": "node repl.js",
     "c": "node repl.js"
   },
@@ -32,6 +30,7 @@
     "express-flash-messages": "^0.1.1",
     "express-handlebars": "^3.0.0",
     "express-method-override-get-post-support": "^1.0.0",
+    "faker": "^4.1.0",
     "load-helpers": "^1.0.1",
     "lodash": "^4.17.4",
     "method-override": "^2.3.10",

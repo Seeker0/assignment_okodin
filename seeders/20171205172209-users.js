@@ -1,4 +1,5 @@
 'use strict';
+let faker = require('faker');
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
@@ -12,13 +13,13 @@ module.exports = {
         isBetaMember: false
       }], {});
     */
-    var users = [];
+    let users = [];
     for (let i = 0; i < 10; i++) {
       users.push({
-        fname: `Foo${i}`,
-        lname: `Bar${i}`,
-        username: `foobar${i}`,
-        email: `foobar${i}@gmail.com`,
+        fname: faker.name.firstName(),
+        lname: faker.name.lastName(),
+        username: faker.internet.userName(),
+        email: faker.internet.email(),
         profileId: `${i}`
       });
     }
